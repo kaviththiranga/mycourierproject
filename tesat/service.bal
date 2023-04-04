@@ -3,8 +3,8 @@ import ballerina/http;
 # A service representing a network-accessible API
 # bound to port `9090`.
 @display {
-	label: "thirdservice",
-	id: "thirdservice-9a4788b8-8c81-4652-a07e-a988b243509b"
+	label: "tesat",
+	id: "tesat-1f1356a3-ea44-485c-aa4a-a0672f735f02"
 }
 service / on new http:Listener(9090) {
 
@@ -14,7 +14,7 @@ service / on new http:Listener(9090) {
     resource function get greeting(string name) returns string|error {
         // Send a response back to the caller.
         if name is "" {
-            return error("name should be empty! ");
+            return error("name should not be empty!");
         }
         return "Hello, " + name;
     }
