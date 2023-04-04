@@ -12,7 +12,4 @@ service / on new http:Listener(9090) {
 
     }
 
-    resource function post tracking(@http:Payload json payload) returns error?|http:Created {
-        
-    }
 }
